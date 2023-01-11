@@ -1,0 +1,50 @@
+.orderDetails {
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.orderDetails .w3-bar {
+  padding: 10px;
+}
+.active {
+  color: red;
+}
+.orderDetails .w3-bar button {
+  padding: 5px;
+  width: 180px;
+  margin: 0 30px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+.orderDetails .w3-container {
+  width: 100%;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#customers td,
+#customers th {
+  border: 1px solid #f1f1f1;
+  padding: 8px;
+}
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#customers tr:hover {
+  background-color: #f1f1f1;
+}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}

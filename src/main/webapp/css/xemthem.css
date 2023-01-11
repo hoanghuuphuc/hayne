@@ -1,0 +1,172 @@
+@charset "ISO-8859-1";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.list-product {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 20px 100px;
+  grid-gap: 20px;
+  
+}
+.list-product-left {
+  background:#0000;
+  padding: 30px 10px;
+}
+.list-product-left h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.accordion {
+  width: 100%;
+}
+.accordion .contentBx {
+  position: relative;
+  margin: 10px 0px;
+}
+.accordion .contentBx .accordion-label {
+  position: relative;
+  padding: 15px 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.accordion .contentBx .accordion-label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+.accordion .contentBx .accordion-content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  padding: 0 5px 0px 10px;
+  opacity: 0.8;
+}
+.accordion .contentBx.active .accordion-content {
+  height: auto;
+  padding: 0 5px 0px 10px;
+}
+.accordion .contentBx.active .accordion-label::before {
+  content: "-";
+}
+.accordion .contentBx .accordion-label ion-icon {
+  transform: translateY(10%);
+  padding-right: 7px;
+  color: #bb86fc;
+}
+.accordion .contentBx .accordion-label span a {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+}
+.accordion-content span {
+  padding: 10px;
+  text-align: center;
+}
+.accordion-content span a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+.accordion-content span:hover {
+  background: #f1f1f1;
+}
+.list-product-right {
+  background: #fff;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 10px 50px;
+background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.product-box {
+  border: 1px solid #999;
+  margin: 10px;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5),
+    -6px -6px 10px -1px rgba(0, 0, 0, 0.5);
+}
+.product-header {
+
+  font-weight: 600;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.product-header .product-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 230px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.product-header .product-2 {
+
+  align-items: center;
+  font-weight: 500;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.6;
+  
+}
+
+.product-header .product-2 p {
+  padding: 0px 5px;
+  font-weight: 600;
+  transform: translateY(15%);
+}
+.header-img img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.header-pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  transform: translateX(30%);
+}
+.header-pay button {
+  background: #0984e3;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+.header-pay button a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,169 @@
+.thongke_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.thongke_box-header {
+  background: #fff;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thongke_box-header .thongke_box-header-l button {
+  padding: 10px;
+  width: 220px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 0;
+  background: #ddd;
+}
+.thongke_box-header .thongke_box-header-r {
+  display: flex;
+  align-items: center;
+}
+.thongke_box-header .thongke_box-header-r input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px 0px 0px 5px;
+  border: 0;
+  background: #ddd;
+}
+.thongke_box-header .thongke_box-header-r i {
+  padding: 10px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffa400;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+.thongke_box-header .thongke_box-header-r i:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.thongke_box-table {
+  width: 100%;
+}
+.thongke_box-content-1 {
+  background: #fff;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.thongke_box-content-1 .thongke_box-content-l {
+  padding-right: 20px;
+}
+.thongke_box-content-1 span {
+  font-size: 18px;
+}
+.thongke_box-content-1 input {
+  padding: 5px;
+  width: 150px;
+}
+.thongke_box-content-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #ddd;
+  width: 100%;
+}
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all .fa-solid {
+  font-size: 30px;
+  padding: 10px;
+}
+.all .thongke_box-content-all {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  margin-top: 20px;
+}
+.all .thongke_box-content-all span {
+  position: absolute;
+  bottom: 23px;
+}
+.accordion {
+  width: 100%;
+}
+.accordion .contentBx {
+  position: relative;
+  margin: 10px 0px;
+}
+.accordion .contentBx .accordion-label {
+  position: relative;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.accordion .contentBx .accordion-label::before {
+  content: "+";
+  position: absolute;
+  top: 45%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+.accordion .contentBx .accordion-content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+  padding: 0 5px 0px 10px;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+.accordion .contentBx.active .accordion-content {
+  height: auto;
+  padding: 0 5px 0px 10px;
+  cursor: pointer;
+}
+.accordion .contentBx.active .accordion-label::before {
+  content: "-";
+}
+.accordion .contentBx .accordion-label ion-icon {
+  transform: translateY(10%);
+  padding-right: 7px;
+  color: #bb86fc;
+}
+.accordion .contentBx .accordion-label {
+  display: flex;
+  align-items: center;
+}
+.accordion .contentBx .accordion-label span:last-child {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  font-weight: 500;
+  margin-right: 5%;
+}
+.accordion-content table {
+  width: 100%;
+}
+.accordion-content table tr td {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.accordion-content table tr th {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 10px 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 150px;
+    background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+.detail-left img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.detail-right .detail-right-name {
+    font-size: 32px;
+    margin: 0;
+    line-height: 1.25;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.detail-right-price span {
+    line-height: 39px;
+    font-size: 28px;
+    font-weight: 400;
+    color: red;
+}
+.detail-right-price del {
+    font-size: 23px;
+    color: #999;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.detail-right-size {
+    display: grid;
+    padding: 10px 0px;
+}
+.detail-right-size .header-size {
+    font-size: 22px;
+    font-weight: 400;
+}
+.detail-right-size .size-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.detail-right-size .size-item .size {
+    margin-right: 10px;
+    border: 1px solid #000;
+    transition: 0.25s ease;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail-right-size .size-item .size:hover {
+    background: #74b9ff;
+    border-color: #74b9ff;
+}
+.detail-right-quantity {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 15px 0px;
+}
+.detail-right-quantity span {
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.detail-right-quantity input {
+    padding: 12px 10px;
+    width: 50px;
+    width: 70px;
+    outline: none;
+    border: none;
+    background: #f1f1f1;
+}
+.detail-right-quantity button {
+    padding: 12px 20px;
+    font-weight: 600;
+}
+.detail-right-quantity button:first-child {
+    transform: translateX(12%);
+    border: none;
+    background: #c1c1c1;
+}
+.detail-right-quantity button:last-child {
+    transform: translateX(-12%);
+    border: none;
+    background: #c1c1c1;
+}
+.buy-now button {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 15px 20px;
+    transition: 0.5s ease;
+}
+.buy-now button:hover {
+    background-color: #ffc107;
+    border: none;
+    outline: none;
+}
+.add-to-cart button {
+    margin-top: 10px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: 0.5s ease;
+    border: 1px solid #999;
+}
+.add-to-cart button:hover {
+    background-color: #000;
+    color: #fff;
+}
+.product-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    width: 100%;
+}
+.product-box .product-box-item {
+    background: #f1f1f1;
+    padding: 30px 20px;
+}
+.product-box .product-box-item:first-child {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-box .product-box-item:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 10px;
+    opacity: 0.7;
+}
+.detail-content .details-content {
+    margin: 10px 25px;
+}
+.detail-content-left span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 50px;
+    opacity: 0.5;
+}
+.detail-content-left p {
+    margin: 10px 0px 20px;
+}
+.detail-content-left ul li {
+    padding: 3px 0px;
+}
+.detail-content-center h2 {
+    margin-bottom: 10px;
+}
+.detail-content-center ul li {
+    padding: 3px 0px;
+}
+.detail-content-right tr {
+    border: 1px solid #999;
+    padding: 8px;
+}
+.detail-content-right td {
+    border: 1px solid #999;
+    padding: 8px;
+}
+.detail-content-right th {
+    border: 1px solid #999;
+    padding: 8px;
+}
